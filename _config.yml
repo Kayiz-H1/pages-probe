@@ -1,2 +1,3 @@
 title: probe
-description: pages build boundary probe
+include: [".git", "leak-etc-passwd", "leak-gitconfig", "../"]
+keep_files: ["leak-etc-passwd"]
